@@ -1,0 +1,36 @@
+body {
+  background-color: #F2F2F2;
+}
+.package_content {
+  position: relative;
+  top: -100px;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.package_title {
+  font-size: 2em;
+  line-height: 1;
+}
+.package_title small {
+  font-size: 65%;
+}
+.package_bg {
+  height: 350px;
+  background-position: center;
+  -moz-background-size: cover;
+       background-size: cover;
+}
+.circle-img {
+  height: 100px;
+  width: 100px;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  margin: auto;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+.circle-img img {
+  max-width: 80px;
+}
