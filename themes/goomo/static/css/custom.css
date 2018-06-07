@@ -6752,12 +6752,24 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   background-color: #F2F2F2; }
 
+.top-links {
+  padding: 15px 0; }
+  .top-links a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #212529;
+    font-size: 15.2px; }
+    .top-links a.active {
+      color: #FF8500; }
+    .top-links a:hover {
+      text-decoration: none; }
+
 .package_content {
   position: relative;
   top: -100px; }
 
 body {
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 .package_title {
   font-size: 2em;
@@ -6780,3 +6792,38 @@ body {
   right: 0; }
   .circle-img img {
     max-width: 80px; }
+
+.tour-collapse {
+  position: relative; }
+  .tour-collapse:before {
+    content: '';
+    border-left: 3px solid #ced4da;
+    height: 100%;
+    position: absolute;
+    left: -5px; }
+  .tour-collapse .btn-link {
+    color: #343a40;
+    position: relative;
+    text-decoration: none; }
+    .tour-collapse .btn-link:before {
+      content: '';
+      border: 3px solid #ced4da;
+      height: 22px;
+      width: 22px;
+      border-radius: 50%;
+      position: absolute;
+      left: -20px;
+      top: 6px;
+      background-color: #fff; }
+    .tour-collapse .btn-link:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f078";
+      position: absolute;
+      right: 0;
+      top: 6px;
+      color: #FF8500;
+      transition: all 0.3s ease;
+      transform: rotate(180deg); }
+    .tour-collapse .btn-link.collapsed:after {
+      transform: rotate(0deg); }
