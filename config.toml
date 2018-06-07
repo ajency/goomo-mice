@@ -1,4 +1,4 @@
-baseURL = "https://ajency.github.io/goomo-mice/docs/"
+baseURL = "https://ajency.github.io/goomo-mice/"
 languageCode = "en-us"
 title = "Goomo MICE"
 theme = "goomo"
