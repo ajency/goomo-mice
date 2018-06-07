@@ -9,3 +9,13 @@
 		border-bottom: 2px dashed $gray-600;
 	}
 }
+
+.blue-bg{
+	background-color: lighten(theme-color("primary"), 72);
+}
+
+.company-card{
+	.btn-secondary{
+		color: $white;
+	}
+}

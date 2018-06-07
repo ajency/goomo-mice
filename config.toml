@@ -2,5 +2,4 @@ baseURL = "https://ajency.github.io/goomo-mice/"
 languageCode = "en-us"
 title = "Goomo MICE"
 theme = "goomo"
-disableLiveReload = true
 publishDir = "docs"

@@ -6764,6 +6764,12 @@ body {
   .divider--dashed {
     border-bottom: 2px dashed #6c757d; }
 
+.blue-bg {
+  background-color: #e0f8ff; }
+
+.company-card .btn-secondary {
+  color: #fff; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 
