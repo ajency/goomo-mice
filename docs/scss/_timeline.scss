@@ -1,0 +1,45 @@
+#tour-Itinerary{
+	.btn{
+		text-transform: capitalize;
+		font-size: 16px;
+    	padding-top: 0;
+    	font-weight: 800;
+    	height: 42px;
+      @include media-breakpoint-down(xs) { 
+        white-space: normal;
+       }
+	}
+	.timeline_location{
+		font-size: 14px;
+		line-height: 20px;
+		font-family: "museo-sans-rounded-700";
+	}
+	li{
+    width: 32%;
+     @include media-breakpoint-down(xs) { 
+        width: 100%;
+        margin-bottom: 20px;
+       }
+    .star{
+		i{
+			display: inline-block;
+			font-size: 14px;
+			color:theme-color("secondary");
+		}
+   	 }
+
+   	 }
+   	 .venue-details{
+   	 	li{
+   	 		.row{
+   	 			    border: 1px solid #f3f3f3;
+
+   	 		}
+   	 		div{
+   	 			margin:0px;
+   	 			padding: 0px;
+   	 		}
+   	 	}
+   	 }
+	}
+

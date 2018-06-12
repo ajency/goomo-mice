@@ -1,11 +1,122 @@
 .package_content{
 	position: relative;
 	top: -100px;
+	margin-bottom: -70px;
 }
-
+@include media-breakpoint-down(xs) { 
+#tour-overview{
+	margin-top: 70px;
+}
+.sidebar{
+    order:1;
+}
+.content-box{
+    order:2;
+}
+}
 .divider{
 	height: 1px;
 	&--dashed{
-		border-bottom: 2px dashed $gray-600;
+		border-bottom: 1px dashed $gray-600;
 	}
+}
+
+.blue-bg{
+	background-color: lighten(theme-color("primary"), 72);
+}
+
+.company-card{
+	.btn-secondary{
+		color: $white;
+	}
+}
+.affix{
+	    position: fixed;
+    	width: 370px;
+    	top:120px;
+    	@include media-breakpoint-down(xs) { 
+    	position:relative;
+    	width:100%;
+    	 }
+}
+.fixed-top {
+	background:#fff;
+    padding: 15px 45px;
+    box-shadow: 2px 2px 2px #ccc;
+    @include media-breakpoint-down(xs) { 
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    }
+}
+.btn{
+	height: 50px;
+	font-size:18px;
+    text-transform: uppercase;
+}
+.applied{
+	border: 1px solid #28a745;
+    color: #28a745;
+    width: 80%;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+}
+.not-applied{
+	border: 1px solid #FF5722;
+    color: #FF5722;
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+
+a.morelink {
+	text-decoration:none;
+	cursor: pointer;
+	outline: none;
+	color: theme-color("secondary");
+}
+.morecontent span {
+	display: none;
+}
+.comment {
+	width: 100%;
+}
+
+#other-details{
+	.view-tour{
+    margin: auto;
+    display: block;
+    width: 200px;
+    background: #fff;
+    box-shadow: 0px 0px 4px #ccc;
+    margin-bottom: 10px;
+
+	}
+}
+.font-weight-light {
+	sm{
+		font-size: 14px;
+		color: theme-color("primary");
+		font-family: "museo-sans-rounded-700";
+	}
+}
+table {
+    border-collapse: collapse;
+    width: 137% !important;
+    max-width:170% !important;
+    overflow-x: scroll;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F6F9FA;
+}
+@include media-breakpoint-down(xs) { 
+body table {
+    width: 230% !important;
+    max-width:230% !important;
+}
 }

@@ -6744,39 +6744,218 @@ body {
   background-color: #F2F2F2; }
 
 .top-links {
-  padding: 15px 0; }
+  padding: 25px 0px 2px 0px; }
+  .top-links li {
+    padding-right: 7px; }
   .top-links a {
     text-transform: uppercase;
-    font-weight: 600;
+    font-family: "museo-sans-rounded-700";
+    font-weight: 800;
     color: #212529;
-    font-size: 15.2px; }
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer; }
     .top-links a.active {
-      color: #FF8500; }
+      color: #FF8500 !important; }
     .top-links a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #FF8500 !important; }
+
+body #important-details table {
+  width: 100% !important; }
+body #important-details h5 {
+  font-weight: 700 !important;
+  letter-spacing: 1px; }
+  body #important-details h5 a {
+    font-size: 12px; }
+body #important-details table th, body #important-details table td {
+  padding: 10px 5px; }
+
+.email-icon {
+  background: url(../img/sprite.png) no-repeat;
+  width: 39px;
+  height: 40px;
+  display: block;
+  background-position: -23px -31px;
+  margin: auto; }
+
+.phone-icon {
+  background: url(../img/sprite.png) no-repeat;
+  width: 39px;
+  height: 40px;
+  display: block;
+  background-position: -103px -31px;
+  margin: auto; }
+
+.location-icon {
+  background: url(../img/sprite.png) no-repeat;
+  width: 39px;
+  height: 40px;
+  display: block;
+  background-position: -177px -31px;
+  margin: auto; }
+
+.pdf-icon {
+  background: url(../img/sprite.png) no-repeat;
+  width: 24px;
+  height: 29px;
+  display: inline-block;
+  background-position: -245px -36px;
+  margin: auto; }
+
+.traveller-icon {
+  background: url(../img/sprite.png) no-repeat;
+  width: 38px;
+  height: 49px;
+  display: inline-block;
+  background-position: -22px -88px;
+  margin: auto; }
 
 .package_content {
   position: relative;
-  top: -100px; }
+  top: -100px;
+  margin-bottom: -70px; }
 
+@media (max-width: 575.98px) {
+  #tour-overview {
+    margin-top: 70px; }
+
+  .sidebar {
+    order: 1; }
+
+  .content-box {
+    order: 2; } }
 .divider {
   height: 1px; }
   .divider--dashed {
-    border-bottom: 2px dashed #6c757d; }
+    border-bottom: 1px dashed #6c757d; }
 
+.blue-bg {
+  background-color: #e0f8ff; }
+
+.company-card .btn-secondary {
+  color: #fff; }
+
+.affix {
+  position: fixed;
+  width: 370px;
+  top: 120px; }
+  @media (max-width: 575.98px) {
+    .affix {
+      position: relative;
+      width: 100%; } }
+
+.fixed-top {
+  background: #fff;
+  padding: 15px 45px;
+  box-shadow: 2px 2px 2px #ccc; }
+  @media (max-width: 575.98px) {
+    .fixed-top {
+      width: 100%;
+      overflow: scroll;
+      display: flex; } }
+
+.btn {
+  height: 50px;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.applied {
+  border: 1px solid #28a745;
+  color: #28a745;
+  width: 80%;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px; }
+
+.not-applied {
+  border: 1px solid #FF5722;
+  color: #FF5722;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 12px; }
+
+a.morelink {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: #FF8500; }
+
+.morecontent span {
+  display: none; }
+
+.comment {
+  width: 100%; }
+
+#other-details .view-tour {
+  margin: auto;
+  display: block;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0px 0px 4px #ccc;
+  margin-bottom: 10px; }
+
+.font-weight-light sm {
+  font-size: 14px;
+  color: #005670;
+  font-family: "museo-sans-rounded-700"; }
+
+table {
+  border-collapse: collapse;
+  width: 137% !important;
+  max-width: 170% !important;
+  overflow-x: scroll; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F6F9FA; }
+
+@media (max-width: 575.98px) {
+  body table {
+    width: 230% !important;
+    max-width: 230% !important; } }
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "museo-sans-rounded-300"; }
 
 .package_title {
   font-size: 2em;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 800; }
+  @media (max-width: 575.98px) {
+    .package_title {
+      text-align: center;
+      margin-top: -80px;
+      margin-bottom: 80px; } }
   .package_title small {
     font-size: 65%; }
 
+p {
+  font-size: 16px;
+  line-height: 20px; }
+
+.airline-details b {
+  color: black; }
+
+.bolder {
+  font-family: "museo-sans-rounded-700"; }
+
+@font-face {
+  font-family: "museo-sans-rounded-300";
+  src: url("../fonts/museo-sans-rounded/30EE5E_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: "museo-sans-rounded-100";
+  src: url("../fonts/museo-sans-rounded/30EE5E_1_0.ttf") format("truetype"); }
+@font-face {
+  font-family: "museo-sans-rounded-700";
+  src: url("../fonts/museo-sans-rounded/30EE5E_2_0.ttf") format("truetype"); }
 .package_bg {
   height: 350px;
   background-position: center;
   background-size: cover; }
+  .package_bg i {
+    margin-bottom: -3px; }
 
 .circle-img {
   height: 100px;
@@ -6788,6 +6967,57 @@ body {
   right: 0; }
   .circle-img img {
     max-width: 80px; }
+
+#tour-Itinerary .btn {
+  text-transform: capitalize;
+  font-size: 16px;
+  padding-top: 0;
+  font-weight: 800;
+  height: 42px; }
+  @media (max-width: 575.98px) {
+    #tour-Itinerary .btn {
+      white-space: normal; } }
+#tour-Itinerary .timeline_location {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "museo-sans-rounded-700"; }
+#tour-Itinerary li {
+  width: 32%; }
+  @media (max-width: 575.98px) {
+    #tour-Itinerary li {
+      width: 100%;
+      margin-bottom: 20px; } }
+  #tour-Itinerary li .star i {
+    display: inline-block;
+    font-size: 14px;
+    color: #FF8500; }
+#tour-Itinerary .venue-details li .row {
+  border: 1px solid #f3f3f3; }
+#tour-Itinerary .venue-details li div {
+  margin: 0px;
+  padding: 0px; }
+
+footer {
+  background: #005670;
+  padding: 20px 0px;
+  position: relative;
+  z-index: 9999; }
+  footer .footer-nav a {
+    color: #EFEFEF;
+    font-size: 18px;
+    padding: 0px 20px;
+    text-decoration: none; }
+  footer hr {
+    border-bottom: 1px solid #CCC;
+    opacity: .5; }
+  @media (max-width: 575.98px) {
+    footer {
+      text-align: center; }
+      footer .text-right {
+        text-align: center !important; }
+      footer .list-inline-item {
+        display: block;
+        line-height: 30px; } }
 
 .tour-collapse {
   position: relative; }

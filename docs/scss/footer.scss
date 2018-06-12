@@ -1,0 +1,28 @@
+footer{
+	background:theme-color("primary");
+	padding: 20px 0px;
+	position: relative;
+	z-index: 9999;
+	.footer-nav{
+		a{
+			color: #EFEFEF;
+			font-size: 18px;
+			padding:0px 20px;
+			text-decoration: none;
+		}
+	}
+	hr{
+		border-bottom: 1px solid #CCC;
+		opacity: .5;
+	}
+	@include media-breakpoint-down(xs) { 
+    		text-align: center;
+    	.text-right{
+    		text-align: center !important;
+    	}
+    	.list-inline-item {
+		    display: block;
+		    line-height: 30px;
+		}
+    }
+}
