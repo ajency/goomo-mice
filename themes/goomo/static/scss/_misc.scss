@@ -7,6 +7,9 @@
 #tour-overview{
 	margin-top: 70px;
 }
+.text-xs-center{
+    text-align:center;
+}
 .sidebar{
     order:1;
 }
@@ -116,7 +119,7 @@ table {
 }
 @include media-breakpoint-down(xs) { 
 body table {
-    width: 230% !important;
-    max-width:230% !important;
+    width: 300% !important;
+    max-width:300% !important;
 }
 }

@@ -6820,6 +6820,9 @@ body #important-details table th, body #important-details table td {
   #tour-overview {
     margin-top: 70px; }
 
+  .text-xs-center {
+    text-align: center; }
+
   .sidebar {
     order: 1; }
 
@@ -6914,8 +6917,8 @@ table {
 
 @media (max-width: 575.98px) {
   body table {
-    width: 230% !important;
-    max-width: 230% !important; } }
+    width: 300% !important;
+    max-width: 300% !important; } }
 body {
   font-family: "museo-sans-rounded-300"; }
 
