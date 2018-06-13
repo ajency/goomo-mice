@@ -7139,7 +7139,10 @@ p {
       padding: 20px 0px; }
       #flight-information .divider-hr img {
         display: block;
-        margin: auto; } }
+        margin: auto; }
+
+  #important-details {
+    padding: 10px !important; } }
 footer {
   background: #005670;
   padding: 20px 0px;
