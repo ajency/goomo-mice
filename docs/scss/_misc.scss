@@ -3,6 +3,9 @@
 	top: -100px;
 	margin-bottom: -70px;
 }
+.pb-0{
+    padding-bottom:0px !important;
+}
 @include media-breakpoint-down(xs) { 
 #tour-overview{
 	margin-top: 70px;
@@ -127,7 +130,7 @@ table {
     overflow-x: scroll;
 }
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #F6F9FA;
+background-color: rgba(127, 175, 189, 0.05);
 }
 @include media-breakpoint-down(xs) { 
 body table {
@@ -135,7 +138,9 @@ body table {
     max-width:300% !important;
 }
 }
-
+.table thead th {
+    vertical-align: middle !important;
+}
 .search-bar{
     width:100% !important;
     .input-group-text{

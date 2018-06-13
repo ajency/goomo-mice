@@ -6773,9 +6773,19 @@ body #important-details h5 {
   font-weight: 700 !important;
   letter-spacing: 1px; }
   body #important-details h5 a {
+    font-size: 12px;
     font-size: 12px; }
+    @media (max-width: 575.98px) {
+      body #important-details h5 a {
+        position: absolute;
+        bottom: 9px;
+        width: 50px;
+        right: 0px; } }
 body #important-details table th, body #important-details table td {
   padding: 10px 5px; }
+@media (max-width: 575.98px) {
+  body #important-details .mt-4 {
+    position: relative; } }
 
 .email-icon {
   background: url(../img/sprite.png) no-repeat;
@@ -6817,10 +6827,16 @@ body #important-details table th, body #important-details table td {
   background-position: -22px -88px;
   margin: auto; }
 
+.table-responsive {
+  box-shadow: inset -10px 0 5px -2px #dedede; }
+
 .package_content {
   position: relative;
   top: -100px;
   margin-bottom: -70px; }
+
+.pb-0 {
+  padding-bottom: 0px !important; }
 
 @media (max-width: 575.98px) {
   #tour-overview {
@@ -6930,12 +6946,15 @@ table {
   overflow-x: scroll; }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #F6F9FA; }
+  background-color: rgba(127, 175, 189, 0.05); }
 
 @media (max-width: 575.98px) {
   body table {
     width: 300% !important;
     max-width: 300% !important; } }
+.table thead th {
+  vertical-align: middle !important; }
+
 .search-bar {
   width: 100% !important; }
   .search-bar .input-group-text {
@@ -7109,7 +7128,8 @@ p {
   @media (max-width: 575.98px) {
     #tour-Itinerary .btn {
       white-space: normal;
-      height: auto; } }
+      height: auto;
+      padding-left: 23px; } }
 #tour-Itinerary .timeline_location {
   font-size: 14px;
   line-height: 20px;

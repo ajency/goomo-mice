@@ -39,12 +39,24 @@ table{
 		letter-spacing:1px;
 		a{
 		font-size:12px;
+			font-size: 12px;
+			@include media-breakpoint-down(xs) { 
+		    position: absolute;
+		    bottom: 9px;
+		    width: 50px;
+		    right: 0px;
+		    }
 		}
 	}
 	table th, table td{
 		padding:10px 5px;
+
 	}
-	
+	@include media-breakpoint-down(xs) { 
+	.mt-4{
+		position:relative;
+	}
+	}
 }
 .email-icon{
 	background: url(../img/sprite.png) no-repeat;
@@ -85,4 +97,7 @@ table{
     display: inline-block;
     background-position: -22px -88px;
     margin: auto;
+}
+.table-responsive{
+	box-shadow: inset -10px 0 5px -2px #dedede;
 }
