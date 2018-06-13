@@ -13,8 +13,8 @@
 </div>
 <div class="container package_content" data-spy="scroll" data-target=".smooth-scroll " data-offset="50">
 	<!-- <div class="row">
-		<div class="col col-4">
-		</div>
+			<div class="col col-4">
+			</div>
 	</div> -->
 	<div class="row">
 		<!-- Sidebar -->
@@ -25,7 +25,7 @@
 			</h1>
 		</div>
 		
-		<div class=" col col-sm-8 content-box">
+		<div class=" col-12 col-sm-8 content-box">
 			
 			<div class=" mt-5 mb-3 top-links">
 				<ul id="secondry-menu" class="list-inline smooth-scroll   navbar-light ">
@@ -58,10 +58,10 @@
 								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#tourAccordion">
 									<div class="card-body px-3 py-2">
 										<div class="row">
-											<div class="col-md-3 col-6">
-												<img src="{{"img/pexels-photo-705075.jpeg" | absURL}}" class="img-fluid">
+											<div class="col-md-3">
+												<img src="{{"img/pexels-photo-705075.jpeg" | absURL}}" class="img-fluid mb-3">
 											</div>
-											<div class="col-md-9 col-6">
+											<div class="col-md-9 ">
 												<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
 											</div>
 										</div>
@@ -156,13 +156,14 @@
 							</div>
 							<div class="divider--dashed my-3"></div>
 						</div>
-						<div class="mt-4">
+						
+						<div id="flight-information" class="mt-4">
 							<h5 class="font-weight-bold text-primary text-uppercase">Airlines:</h5>
 							<div class="airline-details d-flex align-items-center my-3">
-								<p class="font-weight-bold text-black-50 mb-0 mr-2">Departure<b> Spice Jet</b> <span class="text-black-50 pl-2"> (SG105 0500-1420)</p>
+								<p class="font-weight-bold text-black-50 mb-0 mr-2">Departure<b> <img src="https://www.cleartrip.com/images/logos/air-logos/SG.png"/> Spice Jet</b> <span class="text-black-50 pl-2"> (SG105 0500-1420)</p>
 							</div>
 							<div class="row">
-								<div class="col-4 pr-1">
+								<div class="col-sm-4 pr-1">
 									<h6 class="text-dark mb-0 bolder">Delhi (DEL)</h6>
 									<div class="font-weight-bold text-black-50">Wed, 23 JULY, 10:15</div>
 									<div class="small">
@@ -170,13 +171,13 @@
 										International Airport
 									</div>
 								</div>
-								<div class="col-4 px-1">
+								<div class="col-sm-4 px-1 divider-hr">
 									<div class="small text-center">
 										13h 35m
-										<hr>
+										<img src="../img/divider.png"/>
 									</div>
 								</div>
-								<div class="col-4 pl-1">
+								<div class="col-sm-4 pl-1">
 									<h6 class="text-dark mb-0 bolder">Bali-Denpasar (DPS)</h6>
 									<div class="font-weight-bold text-black-50">Wed, 23 JULY, 16:15</div>
 									<div class="small">
@@ -185,24 +186,24 @@
 								</div>
 							</div>
 							<br>
-							<div class="airline-details d-flex align-items-center mt-4 my-3">
-								<p class="font-weight-bold text-black-50 mb-0 mr-2">Arrival <b>Spice Jet</b> <span class="text-black-50 pl-2"> (SG105 0500-1420)</span>
+							<div id="flight-information" class="airline-details d-flex align-items-center mt-4 my-3">
+								<p class="font-weight-bold text-black-50 mb-0 mr-2">Arrival <img src="https://www.cleartrip.com/images/logos/air-logos/SG.png"/> <b>Spice Jet</b> <span class="text-black-50 pl-2"> (SG105 0500-1420)</span>
 							</div>
 							<div class="row">
-								<div class="col-4 pr-1">
+								<div class="col-sm-4 pr-1">
 									<h6 class="text-dark mb-0 bolder">Bali-Denpasar (DPS)</h6>
 									<div class="font-weight-bold text-black-50">Mon, 27 JULY, 10:15</div>
 									<div class="small">
 										Ngurah Rai Airport
 									</div>
 								</div>
-								<div class="col-4 px-1">
+								<div class="col-sm-4 px-1 divider-hr">
 									<div class="small text-center">
 										13h 35m
-										<hr>
+										<img src="../img/divider.png"/>
 									</div>
 								</div>
-								<div class="col-4 pl-1">
+								<div class="col-sm-4 pl-1">
 									<h6 class="text-dark mb-0 bolder">Delhi (DEL)</h6>
 									<div class="font-weight-bold text-black-50">Mon, 27 JULY, 16:15</div>
 									<div class="small">
@@ -292,7 +293,7 @@
 				<h3 class="font-weight-light text-black-50">Other Details
 				<sm>Visible only for Admin</sm>
 				</h3>
-				<h5 class="mt-4 bolder text-primary ">TOUR1 DETAILS</h5>
+				<h5 class="mt-4 bolder text-primary ">TOUR 1 DETAILS</h5>
 				<div class="table-responsive">
 					<table class="table table-striped">
 						<thead>
@@ -316,45 +317,45 @@
 								<td>Bali</td>
 								<td class="text-primary">23 May, 17</td>
 								<td class="text-primary">27 May, 17</td>
-								<td><strong class="bolder">4</strong></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">20</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">4</strong></td>
+								<td class="text-center"><strong class="bolder">40</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">20</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">40</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
 							</tr>
 							<tr>
 								<th scope="row">Maharja Hotel </th>
 								<td>Bali</td>
 								<td class="text-primary">23 May, 17</td>
 								<td class="text-primary">27 May, 17</td>
-								<td><strong class="bolder">4</strong></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">20</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">4</strong></td>
+								<td class="text-center"><strong class="bolder">40</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">20</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">40</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
 							</tr>
 							<tr>
 								<th scope="row">Maharja Hotel </th>
 								<td>Bali</td>
 								<td class="text-primary">23 May, 17</td>
 								<td class="text-primary">27 May, 17</td>
-								<td><strong class="bolder">4</strong></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">20</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">4</strong></td>
+								<td class="text-center"><strong class="bolder">40</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">20</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder">40</strong></td>
+								<td class="text-center"><span class="text-success">Yes</span></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<br>
-				<h5 class="mt-4 bolder text-primary ">TOUR2 DETAILS</h5>
+				
+				<h5 class="mt-4 bolder text-primary ">TOUR 2 DETAILS</h5>
 				<div class="table-responsive">
 					<table class="table table-striped">
 						<thead>
@@ -378,44 +379,44 @@
 								<td>Bali</td>
 								<td class="text-primary">23 May, 17</td>
 								<td class="text-primary">27 May, 17</td>
-								<td><strong class="bolder">4</strong></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">20</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">4</strong></td>
+								<td class="text-center"><strong class="bolder text-center">40</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">20</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">40</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
 							</tr>
 							<tr>
 								<th scope="row">Maharja Hotel </th>
 								<td>Bali</td>
 								<td class="text-primary">23 May, 17</td>
 								<td class="text-primary">27 May, 17</td>
-								<td><strong class="bolder">4</strong></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">20</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">4</strong></td>
+								<td class="text-center"> <strong class="bolder text-center">40</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">20</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">40</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
 							</tr>
 							<tr>
 								<th scope="row">Maharja Hotel </th>
 								<td>Bali</td>
 								<td class="text-primary">23 May, 17</td>
 								<td class="text-primary">27 May, 17</td>
-								<td><strong class="bolder">4</strong></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">20</strong></td>
-								<td><span class="text-success">Yes</span></td>
-								<td><strong class="bolder">40</strong></td>
-								<td><span class="text-success">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">4</strong></td>
+								<td class="text-center"><strong class="bolder text-center">40</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">20</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
+								<td class="text-center"><strong class="bolder text-center">40</strong></td>
+								<td class="text-center"><span class="text-success text-center">Yes</span></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<button type="button" class="btn btn-primary btn-lg btn-light view-tour">+ 3 TOURS DETAILS</button>
+				<button type="button" class="btn btn-lg btn-light view-tour bolder">+ 3 TOURS DETAILS</button>
 				<br>
 				<h5 class="mt-4 bolder text-primary ">PAX DETAILS</h5>
 				<div class="table-responsive">
@@ -435,7 +436,7 @@
 						<tbody>
 							<tr>
 								<th scope="row">Delhi </th>
-								<td><strong class="bolder">120</strong></td>
+								<td ><strong class="bolder ">120</strong></td>
 								<td class="text-primary">23 May, 17</td>
 								<td><strong class="bolder">40</strong></td>
 								<td class="text-primary">23 May, 17</td>
@@ -466,169 +467,158 @@
 						</tbody>
 					</table>
 				</div>
-				<h5> Download the documents</h5>
+				<h5 class="mt-4"> Download the documents</h5>
 				<div class="row">
-					<div class="col-1"><i class="pdf-icon "></i> </div>
-					<div class="col-11"><h6 class="mt-2">Tour 1 <a href="#" class="text-primary">(Click here to download)</a></h6>
+					<div class="col-12"><i class="pdf-icon float-left mr-1"></i>
+						<h6 class="mt-2">Tour 1 <a href="#" class="text-primary">(Click here to download)</a></h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12"><i class="pdf-icon float-left mr-1"></i>
+						<h6 class="mt-2">Tour 2 <a href="#" class="text-primary">(Click here to download)</a></h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12"><i class="pdf-icon float-left mr-1"></i>
+						<h6 class="mt-2">Tour 3 <a href="#" class="text-primary">(Click here to download)</a></h6>
+					</div>
+				</div>
+				<br>
+				<h5 class="mt-4 bolder text-primary ">STATUS AT A GLANCE</h5>
+				<div class="table-responsive">
+					<div class="overlay"></div>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th class="text-center" >Status</th>
+								<th class="text-center" >Tour 1 <br>Visa1 App</th>
+								<th class="text-center" >Tour 1 <br>Visa1 Rcvd</th>
+								<th class="text-center">Tour 1 <br>Visa2 App</th>
+								<th class="text-center" >Tour 1 <br>Visa2 Rcvd</th>
+								<th class="text-center" >Tour 1 <br>Visa1 App</th>
+								<th class="text-center" >Tour 1 <br>Visa2 Rcvd</th>
+								<th class="text-center" >Tour 2 <br>Visa1 App</th>
+								<th class="text-center" >Tour 2 <br>Visa2 Rcvd</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Delhi </th>
+								<td class="text-center"><strong class="bolder">40</strong></td>
+								<td class="text-center"><strong class="bolder">15</strong></td>
+								<td class="text-center"><strong class="bolder">15</strong></td>
+								<td class="text-center"><strong class="bolder">0</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+							</tr>
+							<tr>
+								<th scope="row">Mumbai </th>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+							</tr>
+							<tr>
+								<th scope="row">Chennai </th>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+								<td class="text-center"><strong class="bolder">-</strong></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-1"><i class="pdf-icon "></i> </div>
-				<div class="col-11"><h6 class="mt-2">Tour 2 <a href="#" class="text-primary">(Click here to download)</a></h6>
-			</div>
 		</div>
-		<div class="row">
-			<div class="col-1"><i class="pdf-icon "></i> </div>
-			<div class="col-11"><h6 class="mt-2">Tour 3 <a href="#" class="text-primary">(Click here to download)</a></h6>
-		</div>
-	</div>
-	<br>
-	<h5 class="mt-4 bolder text-primary ">STATUS AT A GLANCE</h5>
-	<div class="table-responsive">
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th >Status</th>
-					<th >Tour1 <br>Visa1 App</th>
-					<th >Tour1 <br>Visa1 Rcvd</th>
-					<th >Tour1 <br>Visa2 App</th>
-					<th >Tour1 <br>Visa2 Rcvd</th>
-					<th >Tour1 <br>Visa1 App</th>
-					<th >Tour1 <br>Visa2 Rcvd</th>
-					<th >Tour2 <br>Visa1 App</th>
-					<th >Tour2 <br>Visa2 Rcvd</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th scope="row">Delhi </th>
-					<td><strong class="bolder">40</strong></td>
-					<td><strong class="bolder">15</strong></td>
-					<td><strong class="bolder">15</strong></td>
-					<td><strong class="bolder">0</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-				</tr>
-				<tr>
-					<th scope="row">Mumbai </th>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-				</tr>
-				<tr>
-					<th scope="row">Chennai </th>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-					<td><strong class="bolder">-</strong></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
-
-</div>
-<div class="col col-sm-4 sidebar">
-
+		<div class="col-12 col-sm-4 sidebar">
 			<div class="right-sidebar" data-spy="affix" data-offset-top="197">
 				<div class="card shadow-sm p-4 mb-3 text-primary blue-bg company-card">
 					<div class="circle-img bg-white d-flex justify-content-center align-items-center position-absolute shadow-sm">
 						<img src="{{"img/dummy.png" | absURL}}">
 					</div>
 					<div class="my-4"></div>
-
 					<h5 class="mb-1">Company Name:</h5>
 					<h5 class="mb-4 bolder">AACT TOURS & TRAVELS</h5>
-
 					<h5 class="mb-1">Division Name:</h5>
-					<h5 class="mb-4 bolder">Travel Management</h5>
-
+					<h5 class="mb-4 bolder">+91 9898989811</h5>
 					<h5 class="mb-1">Group No. & Name:</h5>
 					<h5 class="mb-4 bolder">Lorem ipsum dolor sit amet</h5>
 				</div>
-
 				<div class="card shadow-sm p-4 text-black-50">
 					<div class="row">
 						<div class="col-2">
-						<i class="traveller-icon"></i>
+							<i class="traveller-icon"></i>
 						</div>
 						<div class="col-10">
 							<h4 class="font-weight-bold mt-2 text-dark">Traveller Details</h4>
 						</div>
 					</div>
 					
-
 					<h5 class="mb-1">Name of Traveller</h5>
 					<h5 class="mb-4 bolder text-dark">Manish T. Rawool</h5>
-
 					<h5 class="mb-1">Phone Number</h5>
-					<h5 class="mb-4 bolder text-dark">Travel Management</h5>
-
+					<h5 class="mb-4 bolder text-dark">+91 8888333311</h5>
 					<h5 class="mb-1">Email ID</h5>
 					<h5 class="mb-4 bolder text-dark">manishrawool@gmail.com</h5>
-
 					<h5 class="mb-1">Special Request</h5>
 					<h5 class="mb-1 bolder text-primary">Food, Club, Travel, Adventure etc.</h5>
 				</div>
-				</div>
 			</div>
-</div>
-
+		</div>
+	</div>
 </div>
 </div>
 <div class="modal fade" id="contactus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h2 class="modal-title bolder text-primary" id="exampleModalLabel">Contact Details</h2>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body">
-<div class="row">
-	<div class="col-2">
-		<i class="email-icon"></i>
+	<div class="modal-content">
+		<div class="modal-header">
+			<h2 class="modal-title bolder text-primary" id="exampleModalLabel">Contact Details</h2>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<div class="row">
+				<div class="col-2">
+					<i class="email-icon"></i>
+				</div>
+				<div class="col-10">
+					<h5 class="mb-1 text-primary">Email Address</h5>
+					<h5 class="mb-1 bolder text-primary">Enquiry@acct.com</h5>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-2">
+					<i class="phone-icon"></i>
+				</div>
+				<div class="col-10">
+					<h5 class="mb-1 text-primary">Phone Number</h5>
+					<h5 class="mb-1 bolder text-primary">+91 9898712345</h5>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-2">
+					<i class="location-icon"></i>
+				</div>
+				<div class="col-10">
+					<h5 class="mb-1 text-primary">Address</h5>
+					<h5 class="mb-1 bolder text-primary">Shop No 5, Crisabol Plaza, Bharat Petrol Pump, Nr. KTC Bus Stand</h5>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="col-10">
-		<h5 class="mb-1 text-primary">Email Address</h5>
-		<h5 class="mb-1 bolder text-primary">Enquiry@acct.com</h5>
-	</div>
-</div>
-<br>
-<div class="row">
-	<div class="col-2">
-		<i class="phone-icon"></i>
-	</div>
-	<div class="col-10">
-		<h5 class="mb-1 text-primary">Phone Number</h5>
-		<h5 class="mb-1 bolder text-primary">+91 9898712345</h5>
-	</div>
-</div>
-<br>
-<div class="row">
-	<div class="col-2">
-		<i class="location-icon"></i>
-	</div>
-	<div class="col-10">
-		<h5 class="mb-1 text-primary">Address</h5>
-		<h5 class="mb-1 bolder text-primary">Shop No 5, Crisabol Plaza, Bharat Petrol Pump, Nr. KTC Bus Stand</h5>
-	</div>
-</div>
-</div>
-
-</div>
 </div>
 </div>
 {{ end }}

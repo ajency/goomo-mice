@@ -80,6 +80,7 @@
 a.morelink {
 	text-decoration:none;
 	cursor: pointer;
+    font-family: "museo-sans-rounded-700";
 	outline: none;
 	color: theme-color("secondary");
 }
@@ -89,6 +90,13 @@ a.morelink {
 .comment {
 	width: 100%;
 }
+.airline-details{
+    img{
+     width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    }
+}
 
 #other-details{
 	.view-tour{
@@ -96,9 +104,10 @@ a.morelink {
     display: block;
     width: 200px;
     background: #fff;
-    box-shadow: 0px 0px 4px #ccc;
+    box-shadow: 0px 2px 4px #a5a5a5;
     margin-bottom: 10px;
-
+    color: #015670;
+    font-wieght:200!important;
 	}
 }
 .font-weight-light {
@@ -106,6 +115,9 @@ a.morelink {
 		font-size: 14px;
 		color: theme-color("primary");
 		font-family: "museo-sans-rounded-700";
+        @include media-breakpoint-down(xs) { 
+        display:block;
+        }
 	}
 }
 table {
@@ -207,3 +219,4 @@ body table {
   
 }
 input:focus ~ .bar:before{left:0; right:0;}
+

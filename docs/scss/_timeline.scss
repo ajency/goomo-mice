@@ -7,6 +7,7 @@
     	height: 42px;
       @include media-breakpoint-down(xs) { 
         white-space: normal;
+        height:auto;
        }
 	}
 	.timeline_location{
@@ -43,3 +44,18 @@
    	 }
 	}
 
+@include media-breakpoint-down(xs) { 
+    #flight-information{
+    text-align:center;
+        .airline-details{
+        text-align:center;
+        }
+      .divider-hr{
+        padding:20px 0px;
+        img{
+          display:block;
+          margin:auto;
+        }
+      }
+    }
+}

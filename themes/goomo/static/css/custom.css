@@ -6890,6 +6890,7 @@ body #important-details table th, body #important-details table td {
 a.morelink {
   text-decoration: none;
   cursor: pointer;
+  font-family: "museo-sans-rounded-700";
   outline: none;
   color: #FF8500; }
 
@@ -6899,18 +6900,28 @@ a.morelink {
 .comment {
   width: 100%; }
 
+.airline-details img {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%; }
+
 #other-details .view-tour {
   margin: auto;
   display: block;
   width: 200px;
   background: #fff;
-  box-shadow: 0px 0px 4px #ccc;
-  margin-bottom: 10px; }
+  box-shadow: 0px 2px 4px #a5a5a5;
+  margin-bottom: 10px;
+  color: #015670;
+  font-wieght: 200 !important; }
 
 .font-weight-light sm {
   font-size: 14px;
   color: #005670;
   font-family: "museo-sans-rounded-700"; }
+  @media (max-width: 575.98px) {
+    .font-weight-light sm {
+      display: block; } }
 
 table {
   border-collapse: collapse;
@@ -7097,7 +7108,8 @@ p {
   height: 42px; }
   @media (max-width: 575.98px) {
     #tour-Itinerary .btn {
-      white-space: normal; } }
+      white-space: normal;
+      height: auto; } }
 #tour-Itinerary .timeline_location {
   font-size: 14px;
   line-height: 20px;
@@ -7118,6 +7130,16 @@ p {
   margin: 0px;
   padding: 0px; }
 
+@media (max-width: 575.98px) {
+  #flight-information {
+    text-align: center; }
+    #flight-information .airline-details {
+      text-align: center; }
+    #flight-information .divider-hr {
+      padding: 20px 0px; }
+      #flight-information .divider-hr img {
+        display: block;
+        margin: auto; } }
 footer {
   background: #005670;
   padding: 20px 0px;
