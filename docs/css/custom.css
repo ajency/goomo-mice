@@ -6743,6 +6743,12 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   background-color: #F2F2F2; }
 
+.bg-gray {
+  background: #F8F8F8; }
+
+section {
+  background: white; }
+
 .top-links {
   padding: 25px 0px 2px 0px; }
   .top-links li {
@@ -6919,6 +6925,74 @@ table {
   body table {
     width: 300% !important;
     max-width: 300% !important; } }
+.search-bar {
+  width: 100% !important; }
+  .search-bar .input-group-text {
+    background: none;
+    border: 0px;
+    position: absolute;
+    top: 16px; }
+
+.search-container {
+  margin-top: 30px; }
+  @media (max-width: 575.98px) {
+    .search-container {
+      margin-top: 0px; }
+      .search-container button {
+        width: 93% !important;
+        margin: auto; } }
+  .search-container .form-search input {
+    width: 100% !important;
+    height: 60px;
+    box-shadow: 1px 1px 13px #ccc;
+    border: 0px;
+    padding-left: 34px; }
+  .search-container .form-search button {
+    color: white;
+    height: 60px; }
+
+.group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px; }
+  .group input {
+    border: none;
+    border-bottom: 1px solid #005670;
+    padding: 10px;
+    display: block;
+    width: 100%; }
+    .group input:focus {
+      outline: none; }
+    .group input:focus ~ label, .group input:valid ~ label {
+      top: -10px;
+      font-size: 17px;
+      color: #005670; }
+  .group label {
+    position: absolute;
+    color: #ccc;
+    top: 12px;
+    font-size: 16px;
+    left: 0;
+    transition: 0.2s ease all; }
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%; }
+  .bar:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #005670;
+    height: 4px;
+    transition: left 0.2s ease-out, right 0.2s ease-out; }
+
+input:focus ~ .bar:before {
+  left: 0;
+  right: 0; }
+
 body {
   font-family: "museo-sans-rounded-300"; }
 
@@ -6959,6 +7033,50 @@ p {
   background-size: cover; }
   .package_bg i {
     margin-bottom: -3px; }
+
+.package_bg_home {
+  height: 450px;
+  background-position: 0px 20%;
+  background-size: cover; }
+  .package_bg_home .banner-content {
+    padding-top: 230px; }
+    @media (max-width: 575.98px) {
+      .package_bg_home .banner-content {
+        padding-top: 80px; } }
+
+#image-gallery img {
+  margin-top: 20px;
+  display: none; }
+#image-gallery .btn-view-more, #image-gallery .btn-view-less {
+  margin: 20px auto;
+  display: block;
+  border: 0px; }
+  #image-gallery .btn-view-more:hover, #image-gallery .btn-view-less:hover {
+    background: none;
+    border: 0px;
+    color: #005670 !important; }
+#image-gallery .btn-view-less {
+  display: none; }
+
+#image-gallery .col-xs-2 {
+  border-right: 1px solid #ccc;
+  cursor: pointer; }
+  #image-gallery .col-xs-2:hover {
+    box-shadow: 0px 0px 4px #ccc; }
+  @media (max-width: 575.98px) {
+    #image-gallery .col-xs-2 {
+      width: 32%; } }
+  #image-gallery .col-xs-2 img {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 23px; }
+#image-gallery .col-xs-2:nth-child(6n) {
+  border-right: 0px; }
+  @media (max-width: 575.98px) {
+    #image-gallery .col-xs-2:nth-child(6n) {
+      border-right: 1px solid #ccc; } }
+@media (max-width: 575.98px) {
+  #image-gallery .col-xs-2:nth-child(3n) {
+    border-right: 0px; } }
 
 .circle-img {
   height: 100px;
@@ -7056,3 +7174,89 @@ footer {
       transform: rotate(180deg); }
     .tour-collapse .btn-link.collapsed:after {
       transform: rotate(0deg); }
+
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block; }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none; }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0); }
+
+  .carousel-item img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    cursor: pointer; }
+    .carousel-item img:hover {
+      -webkit-filter: grayscale(0%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%); }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; } }
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 3px #000;
+  background: #fff;
+  color: #ccc;
+  top: 65%;
+  opacity: 0.9 !important;
+  margin: -50px; }
+  .carousel-control-prev i, .carousel-control-next i {
+    font-size: 20px;
+    opacity: 0.9 !important;
+    color: #FF8500 !important; }
+  @media (max-width: 575.98px) {
+    .carousel-control-prev, .carousel-control-next {
+      top: 38%;
+      margin: -10px; } }

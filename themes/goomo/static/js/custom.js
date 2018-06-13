@@ -73,3 +73,55 @@ $(document).ready(function() {
    
       });
     })(jQuery);
+
+    // Show the first 6 images
+$("img:lt(13)").show();
+  $(".btn-view-less").click(function(){
+  $('img').slice(13, 57).hide();
+    $('.btn-view-less').css({"display": "none"});
+    $('.btn-view-more').css({"display": "block"});
+  });
+// When the gallery button is clicked
+$("#gallery-btn").on('click', function(event) {
+  // Prevent default behavior
+  $('.btn-view-less').css({"display": "block"});
+    $('.btn-view-more').css({"display": "none"});
+  event.preventDefault();
+  // All of the hidden images
+  var $hidden = $("img:hidden");
+  // Show the next 6 images
+  $($hidden).slice(0, 13).fadeIn(800);
+  // If the length of $hidden is 4 then hide the button
+  if ($hidden.length == 13) {
+    $(this).fadeOut();
+  }
+});
+
+
+
+$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+  
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 7;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
+
+
+  $('#carouselExample').carousel({ 
+                interval: 2000
+        });
