@@ -9,6 +9,9 @@ section{
 }
 .top-links{
 	padding: 25px 0px 2px 0px; 
+	 @include media-breakpoint-between(xs, md) {
+		position:absolute;
+	}
 	li{
 	    padding-right: 4px;
 	}
@@ -17,9 +20,13 @@ section{
 		font-family: "museo-sans-rounded-700";
 		font-weight: 800;
 		color: $gray-900;
-		font-size: 17px;
+		font-size: 14px;
 		line-height:20px;
 		cursor:pointer;
+		@include media-breakpoint-only(xl) {
+       font-size: 17px;
+       	}
+
 		&.active{
 			color: theme-color("secondary") !important;
 		}
@@ -40,7 +47,7 @@ table{
 		a{
 		font-size:12px;
 			font-size: 12px;
-			@include media-breakpoint-down(xs) { 
+			 @include media-breakpoint-between(xs, md) {
 		    position: absolute;
 		    bottom: 9px;
 		    width: 50px;
@@ -52,7 +59,7 @@ table{
 		padding:10px 5px;
 
 	}
-	@include media-breakpoint-down(xs) { 
+	 @include media-breakpoint-between(xs, md) {
 	.mt-4{
 		position:relative;
 	}

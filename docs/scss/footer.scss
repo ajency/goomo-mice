@@ -15,7 +15,7 @@ footer{
 		border-bottom: 1px solid #CCC;
 		opacity: .5;
 	}
-	@include media-breakpoint-down(xs) { 
+	 @include media-breakpoint-between(xs, md) {
     		text-align: center;
     	.text-right{
     		text-align: center !important;

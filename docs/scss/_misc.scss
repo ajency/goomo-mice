@@ -6,10 +6,8 @@
 .pb-0{
     padding-bottom:0px !important;
 }
-@include media-breakpoint-down(xs) { 
-#tour-overview{
-	margin-top: 70px;
-}
+ @include media-breakpoint-between(xs, md) {
+
 .text-xs-center{
     text-align:center;
 }
@@ -38,18 +36,22 @@
 }
 .affix{
 	    position: fixed;
-    	width: 370px;
+    	width: 310px;
     	top:120px;
-    	@include media-breakpoint-down(xs) { 
-    	position:relative;
-    	width:100%;
+     @include media-breakpoint-between(xs, md) {
+        	position:relative;
+        	width:100%;
+            top: 0px;
     	 }
+        @include media-breakpoint-only(xl) {
+            width: 370px;
+         }
 }
 .fixed-top {
 	background:#fff;
     padding: 15px 45px;
     box-shadow: 2px 2px 2px #ccc;
-    @include media-breakpoint-down(xs) { 
+    @include media-breakpoint-between(xs, md) {
     width: 100%;
     overflow: scroll;
     display: flex;
@@ -118,7 +120,7 @@ a.morelink {
 		font-size: 14px;
 		color: theme-color("primary");
 		font-family: "museo-sans-rounded-700";
-        @include media-breakpoint-down(xs) { 
+        @include media-breakpoint-between(xs, md) {
         display:block;
         }
 	}
@@ -132,7 +134,7 @@ table {
 .table-striped tbody tr:nth-of-type(odd) {
 background-color: rgba(127, 175, 189, 0.05);
 }
-@include media-breakpoint-down(xs) { 
+ @include media-breakpoint-between(xs, md) {
 body table {
     width: 300% !important;
     max-width:300% !important;
@@ -152,7 +154,7 @@ body table {
 }
 .search-container{
     margin-top:30px;
-@include media-breakpoint-down(xs) { 
+ @include media-breakpoint-between(xs, md) {
     margin-top: 0px;
      button{
         width: 93% !important;

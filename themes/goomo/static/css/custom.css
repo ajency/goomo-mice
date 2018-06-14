@@ -6751,6 +6751,9 @@ section {
 
 .top-links {
   padding: 25px 0px 2px 0px; }
+  @media (max-width: 991.98px) {
+    .top-links {
+      position: absolute; } }
   .top-links li {
     padding-right: 4px; }
   .top-links a {
@@ -6758,9 +6761,12 @@ section {
     font-family: "museo-sans-rounded-700";
     font-weight: 800;
     color: #212529;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 20px;
     cursor: pointer; }
+    @media (min-width: 1200px) {
+      .top-links a {
+        font-size: 17px; } }
     .top-links a.active {
       color: #FF8500 !important; }
     .top-links a:hover {
@@ -6775,7 +6781,7 @@ body #important-details h5 {
   body #important-details h5 a {
     font-size: 12px;
     font-size: 12px; }
-    @media (max-width: 575.98px) {
+    @media (max-width: 991.98px) {
       body #important-details h5 a {
         position: absolute;
         bottom: 9px;
@@ -6783,7 +6789,7 @@ body #important-details h5 {
         right: 0px; } }
 body #important-details table th, body #important-details table td {
   padding: 10px 5px; }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   body #important-details .mt-4 {
     position: relative; } }
 
@@ -6838,10 +6844,7 @@ body #important-details table th, body #important-details table td {
 .pb-0 {
   padding-bottom: 0px !important; }
 
-@media (max-width: 575.98px) {
-  #tour-overview {
-    margin-top: 70px; }
-
+@media (max-width: 991.98px) {
   .text-xs-center {
     text-align: center; }
 
@@ -6863,18 +6866,22 @@ body #important-details table th, body #important-details table td {
 
 .affix {
   position: fixed;
-  width: 370px;
+  width: 310px;
   top: 120px; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .affix {
       position: relative;
-      width: 100%; } }
+      width: 100%;
+      top: 0px; } }
+  @media (min-width: 1200px) {
+    .affix {
+      width: 370px; } }
 
 .fixed-top {
   background: #fff;
   padding: 15px 45px;
   box-shadow: 2px 2px 2px #ccc; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .fixed-top {
       width: 100%;
       overflow: scroll;
@@ -6935,7 +6942,7 @@ a.morelink {
   font-size: 14px;
   color: #005670;
   font-family: "museo-sans-rounded-700"; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .font-weight-light sm {
       display: block; } }
 
@@ -6948,7 +6955,7 @@ table {
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(127, 175, 189, 0.05); }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   body table {
     width: 300% !important;
     max-width: 300% !important; } }
@@ -6965,7 +6972,7 @@ table {
 
 .search-container {
   margin-top: 30px; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .search-container {
       margin-top: 0px; }
       .search-container button {
@@ -7030,7 +7037,7 @@ body {
   font-size: 2em;
   line-height: 1;
   font-weight: 800; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .package_title {
       text-align: center;
       margin-top: -80px;
@@ -7064,13 +7071,16 @@ p {
   .package_bg i {
     margin-bottom: -3px; }
 
+@media (max-width: 991.98px) {
+  .print-pdf {
+    float: none !important; } }
 .package_bg_home {
   height: 450px;
   background-position: 0px 20%;
   background-size: cover; }
   .package_bg_home .banner-content {
     padding-top: 230px; }
-    @media (max-width: 575.98px) {
+    @media (max-width: 991.98px) {
       .package_bg_home .banner-content {
         padding-top: 80px; } }
 
@@ -7093,7 +7103,7 @@ p {
   cursor: pointer; }
   #image-gallery .col-xs-2:hover {
     box-shadow: 0px 0px 4px #ccc; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     #image-gallery .col-xs-2 {
       width: 32%; } }
   #image-gallery .col-xs-2 img {
@@ -7101,10 +7111,10 @@ p {
     padding-bottom: 23px; }
 #image-gallery .col-xs-2:nth-child(6n) {
   border-right: 0px; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     #image-gallery .col-xs-2:nth-child(6n) {
       border-right: 1px solid #ccc; } }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #image-gallery .col-xs-2:nth-child(3n) {
     border-right: 0px; } }
 
@@ -7125,7 +7135,7 @@ p {
   padding-top: 0;
   font-weight: 800;
   height: 42px; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     #tour-Itinerary .btn {
       white-space: normal;
       height: auto;
@@ -7135,11 +7145,14 @@ p {
   line-height: 20px;
   font-family: "museo-sans-rounded-700"; }
 #tour-Itinerary li {
-  width: 32%; }
+  width: 31%; }
   @media (max-width: 575.98px) {
     #tour-Itinerary li {
       width: 100%;
       margin-bottom: 20px; } }
+  @media (min-width: 1200px) {
+    #tour-Itinerary li {
+      width: 32%; } }
   #tour-Itinerary li .star i {
     display: inline-block;
     font-size: 14px;
@@ -7150,7 +7163,7 @@ p {
   margin: 0px;
   padding: 0px; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #flight-information {
     text-align: center; }
     #flight-information .airline-details {
@@ -7176,7 +7189,7 @@ footer {
   footer hr {
     border-bottom: 1px solid #CCC;
     opacity: .5; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     footer {
       text-align: center; }
       footer .text-right {
@@ -7301,7 +7314,7 @@ footer {
     font-size: 20px;
     opacity: 0.9 !important;
     color: #FF8500 !important; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .carousel-control-prev, .carousel-control-next {
       top: 38%;
       margin: -10px; } }

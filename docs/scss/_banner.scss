@@ -6,13 +6,18 @@
 		margin-bottom:-3px;
 	}
 }
+ @include media-breakpoint-between(xs, md) {
+ 	.print-pdf{
+ 		float:none !important;
+ 	}
+ }
 .package_bg_home{
 	height: 450px;
 	background-position: 0px 20%;
 	background-size: cover;
 	.banner-content{
 		padding-top:230px;
-		@include media-breakpoint-down(xs) { 
+	 @include media-breakpoint-between(xs, md) {
 		 padding-top: 80px;
 		}
 	}
@@ -45,7 +50,7 @@
 		box-shadow:0px 0px 4px #ccc;
 		}
 
-		@include media-breakpoint-down(xs) { 
+		 @include media-breakpoint-between(xs, md) {
 			width:32%;
 		}
 
@@ -56,11 +61,11 @@
 	}
 	.col-xs-2:nth-child(6n){
 		border-right:0px;
-		@include media-breakpoint-down(xs) { 
+		 @include media-breakpoint-between(xs, md) {
 		 border-right:1px solid #ccc;
 		}
 	}
-	@include media-breakpoint-down(xs) { 
+	 @include media-breakpoint-between(xs, md) {
 			.col-xs-2:nth-child(3n){
 				border-right:0px;
 			}

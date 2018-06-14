@@ -91,7 +91,7 @@
     opacity:0.9 !important;
     color: theme-color("secondary") !important;
     }
-    @include media-breakpoint-down(xs) { 
+ @include media-breakpoint-between(xs, md) {
              top: 38%;
              margin: -10px;
         }
