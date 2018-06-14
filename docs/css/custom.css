@@ -6972,7 +6972,7 @@ table {
 
 .search-container {
   margin-top: 30px; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 575.98px) {
     .search-container {
       margin-top: 0px; }
       .search-container button {
@@ -7080,7 +7080,7 @@ p {
   background-size: cover; }
   .package_bg_home .banner-content {
     padding-top: 230px; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 575.98px) {
       .package_bg_home .banner-content {
         padding-top: 80px; } }
 
@@ -7307,9 +7307,9 @@ footer {
   box-shadow: 1px 1px 3px #000;
   background: #fff;
   color: #ccc;
-  top: 65%;
+  top: 35%;
   opacity: 0.9 !important;
-  margin: -50px; }
+  margin: 0px -12px; }
   .carousel-control-prev i, .carousel-control-next i {
     font-size: 20px;
     opacity: 0.9 !important;

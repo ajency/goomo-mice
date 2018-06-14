@@ -154,7 +154,7 @@ body table {
 }
 .search-container{
     margin-top:30px;
- @include media-breakpoint-between(xs, md) {
+@include media-breakpoint-only(xs) { 
     margin-top: 0px;
      button{
         width: 93% !important;

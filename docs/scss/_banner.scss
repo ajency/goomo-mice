@@ -17,7 +17,7 @@
 	background-size: cover;
 	.banner-content{
 		padding-top:230px;
-	 @include media-breakpoint-between(xs, md) {
+	 @include media-breakpoint-only(xs) { 
 		 padding-top: 80px;
 		}
 	}
