@@ -70,4 +70,12 @@
 				border-right:0px;
 			}
 		}
+		 @include media-breakpoint-only(sm) {
+			.col-xs-2:nth-child(3n){
+				border-right:1px solid #ccc !important;
+			}
+		}
+}
+.row:before, row:after{
+	display:inline-block;
 }

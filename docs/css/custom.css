@@ -7117,6 +7117,12 @@ p {
 @media (max-width: 991.98px) {
   #image-gallery .col-xs-2:nth-child(3n) {
     border-right: 0px; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #image-gallery .col-xs-2:nth-child(3n) {
+    border-right: 1px solid #ccc !important; } }
+
+.row:before, row:after {
+  display: inline-block; }
 
 .circle-img {
   height: 100px;
