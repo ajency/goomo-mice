@@ -108,3 +108,10 @@ table{
 .table-responsive{
 	box-shadow: inset -10px 0 5px -2px #dedede;
 }
+ @include media-breakpoint-only(xs) { 
+ 	.form-search{
+ 		.col-lg-10{
+ 			padding:0px !important;
+ 		}
+ 	}
+ }

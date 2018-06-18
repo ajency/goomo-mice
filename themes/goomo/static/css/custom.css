@@ -6836,6 +6836,9 @@ body #important-details table th, body #important-details table td {
 .table-responsive {
   box-shadow: inset -10px 0 5px -2px #dedede; }
 
+@media (max-width: 575.98px) {
+  .form-search .col-lg-10 {
+    padding: 0px !important; } }
 .package_content {
   position: relative;
   top: -100px;
@@ -6976,7 +6979,7 @@ table {
     .search-container {
       margin-top: 0px; }
       .search-container button {
-        width: 93% !important;
+        width: 100% !important;
         margin: auto; } }
   .search-container .form-search input {
     width: 100% !important;
