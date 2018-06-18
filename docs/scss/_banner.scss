@@ -79,3 +79,10 @@
 .row:before, row:after{
 	display:inline-block;
 }
+ @include media-breakpoint-between(xs, md) {
+ 	.banner-content{
+ 		h4{
+ 			    font-size: 17px;
+ 		}
+ 	}
+ }
