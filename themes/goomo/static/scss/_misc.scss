@@ -168,6 +168,9 @@ body table {
     box-shadow: 1px 1px 13px #ccc;
     border: 0px;
     padding-left: 34px;
+    @include media-breakpoint-only(xs) { 
+    font-size:11px;
+    }
 }
 
     button{

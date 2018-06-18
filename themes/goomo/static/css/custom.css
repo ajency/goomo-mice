@@ -6984,6 +6984,9 @@ table {
     box-shadow: 1px 1px 13px #ccc;
     border: 0px;
     padding-left: 34px; }
+    @media (max-width: 575.98px) {
+      .search-container .form-search input {
+        font-size: 11px; } }
   .search-container .form-search button {
     color: white;
     height: 60px; }
