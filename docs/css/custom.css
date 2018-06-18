@@ -6766,7 +6766,7 @@ section {
     cursor: pointer; }
     @media (min-width: 1200px) {
       .top-links a {
-        font-size: 17px; } }
+        font-size: 15px; } }
     .top-links a.active {
       color: #FF8500 !important; }
     .top-links a:hover {
